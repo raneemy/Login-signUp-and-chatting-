@@ -12,11 +12,15 @@ class SepcialistSignUpPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       //backgroundColor:Color(0xffFEFEF2),
+              backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: ListView(
                 children: [
-            const SizedBox(height: 65,),
+            const SizedBox(height: 20,),
             const Center(
               child:BreatheFreeText(),
             ),
@@ -33,13 +37,18 @@ class SepcialistSignUpPage extends StatelessWidget {
               const SizedBox(height: 11,),
               InputFiled(hintText: 'E_mail'),
               const SizedBox(height: 11,),
-              InputFiled(hintText: 'Password'),
+              InputFiled(
+                obscureText: true,
+                hintText: 'Password'),
               const SizedBox(height: 11,),
               InputFiled(hintText: 'Link drive certification'),
               const SizedBox(height: 11,),
               InputFiled(hintText: 'Experince year'),
               const SizedBox(height: 11,),
-              buttonWidget(text: 'Send request'),
+              buttonWidget(
+                    color: Color(0xffD69B9F),
+                    textcolor: Colors.white,
+                text: 'Send request'),
               const SizedBox(height: 11,),
               GestureDetector(
                 onTap: (){

@@ -28,6 +28,10 @@ class _UserSignUpPageState extends State<UserSignUpPage> {
     return ModalProgressHUD(
       inAsyncCall: isLoading,
       child: Scaffold(
+              backgroundColor: Colors.white,
+        appBar: AppBar(
+          backgroundColor: Colors.white,
+        ),
         //backgroundColor:Color(0xffFEFEF2),
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -36,7 +40,7 @@ class _UserSignUpPageState extends State<UserSignUpPage> {
             child: ListView(
               children: [
                 const SizedBox(
-                  height: 65,
+                  height: 20,
                 ),
                 const Center(
                   child: BreatheFreeText(),
@@ -46,7 +50,8 @@ class _UserSignUpPageState extends State<UserSignUpPage> {
                 ),
                 Row(
                   children: [
-                    TypeButtonWidget(text: 'User'),
+                    TypeButtonWidget(
+                      text: 'User'),
                   ],
                 ),
                 InputFiled(hintText: 'Name'),
@@ -66,6 +71,7 @@ class _UserSignUpPageState extends State<UserSignUpPage> {
                     onChanged: (data) {
                       password = data;
                     },
+                    obscureText: true,
                     hintText: 'Password'),
                 const SizedBox(
                   height: 11,
@@ -79,6 +85,8 @@ class _UserSignUpPageState extends State<UserSignUpPage> {
                   height: 11,
                 ),
                 buttonWidget(
+                    color: Color(0xffD69B9F),
+                    textcolor: Colors.white,
                     onTap: () async {
                       if (formKey.currentState!.validate()) {
                         isLoading = true;

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:project_21/Pages/login_page.dart';
 
-class Spalsh extends StatefulWidget {
-  const Spalsh({super.key});
+class Splash extends StatefulWidget {
+  const Splash({super.key});
 
   @override
-  State<Spalsh> createState() => _SpalshState();
+  State<Splash> createState() => _SpalshState();
 }
 
-class _SpalshState extends State<Spalsh> {
+class _SpalshState extends State<Splash> {
   @override
   void initState() {
     super.initState();

@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
 class InputFiled extends StatelessWidget {
-  InputFiled({this.hintText,this.onChanged});
+  InputFiled({this.hintText,this.onChanged,this.obscureText=false});
   String? hintText;
+  bool? obscureText;
   Function(String)? onChanged;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      obscureText: obscureText! ,
       validator: (data){
         if(data!.isEmpty){
           return 'Field is required';
