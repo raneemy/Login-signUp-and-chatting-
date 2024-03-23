@@ -13,7 +13,7 @@ class BubbleChat extends StatelessWidget {
     return Align(
       alignment: Alignment.centerRight,
       child: Container(
-        margin: EdgeInsets.all(10),
+        margin: EdgeInsets.all(5),
        // width: 130,
         //alignment: Alignment.centerLeft,
         padding: EdgeInsets.all(10),
@@ -44,7 +44,7 @@ class BubbleChatFriend extends StatelessWidget {
     return Align(
       alignment: Alignment.centerLeft,
       child: Container(
-        margin: EdgeInsets.all(10),
+        margin: EdgeInsets.all(5),
        // width: 130,
         //alignment: Alignment.centerLeft,
         padding: EdgeInsets.all(10),
